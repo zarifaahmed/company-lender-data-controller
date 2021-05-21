@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="App.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="method-container">
+            <!--company get method -->
+            <p class="">COMPANY METHODS</p>
+            <div class="getMethods">
+                <p id="getRow">
+                    <span>GET</span>
+                    <span class="dropdownIcon">&#8801;</span>
+
+                </p>
+                <div class="methodDiv getDiv" id="getdiv1">
+                    <label for="companyId" id="companyIdLabel" class="requiredData">
+                        <span>*</span>
+                        Please Enter Company ID
+                    </label>
+                    <input type="text" id="companyId" name="compId" placeholder="Company Id">
+
+                    <label for="branchId" id="branchIdLabel" class="requiredData">
+                        <span>*</span>
+                        Please Enter Branch ID
+                    </label>
+                    <input type="text" id="branchId" placeholder="Branch Id">
+
+                    <label for="agentId" id="agentIdLabel" class="requiredData">
+                        <span>*</span>
+                        Please Enter Agent ID
+                    </label>
+                    <input type="text" id="agentId" placeholder="Agent Id">
+
+                    <!-- show all -->
+                    <div class="checkboxDiv">
+                        <label for="allCompanies">Show all Companies</label>
+                        <input type="checkbox" name="allCompanies" id="allCompanies">
+
+                        <label for="allBranches">Show all Braches</label>
+                        <input type="checkbox" name="allBranches" id="allBranches">
+
+                        <label for="allAgents">Show all Agents</label>
+                        <input type="checkbox" name="allAgents" id="allAgents">
+                    </div>
+                    <!-- button -->
+                    <input type="button" id="getBtn" value="Get" class="getBtn">
+                </div>
+            </div>
+
+
+            <!-- company post method -->
+            <div class="postMethods">
+
+                <p id="postRow">
+                    <span>POST</span>
+                    <span class="dropdownIcon">&#8801;</span>
+
+                </p>
+                <div class="methodDiv postDiv" id="postdiv1">
+                    <!--  -->
+                    <label for="dataName" id="dataNameLabelPost" class="requiredData">
+                        <span>*</span>
+                        Please Enter New Name
+                    </label>
+                    <input type="text" id="dataName" name="compId" placeholder="Name or User Id">
+                    <!--  -->
+                    <label for="postCompanyId" class="requiredData" id="companyIdLabelP">
+                        <span>*</span>
+                        Please Enter Company ID
+                    </label>
+                    <input type="text" id="postCompanyId" name="compId" placeholder="Company Id">
+                    <!--  -->
+                    <label for="postBranchId" id="branchIdLabelP" class="requiredData">
+                        <span>*</span>
+                        Please Enter Branch ID
+                    </label>
+                    <input type="text" id="postBranchId" placeholder="Branch Id">
+
+                    <div class="checkboxDiv">
+                        <!-- show all -->
+                        <label for="allCompanies">Add New Company </label>
+                        <input type="checkbox" name="companyName" id="companyName" style="margin: 0;">
+
+                        <label for="allBranches">Add New Brach </label>
+                        <input type="checkbox" name="companyName" id="branchName">
+
+                        <label for="allAgents">Add New Agent </label>
+                        <input type="checkbox" name="companyName" id="agentName">
+                    </div>
+
+
+                    <!-- button -->
+                    <input type="button" id="postBtn" value="Post" class="postBtn">
+                </div>
+            </div>
+
+            <!-- company put method -->
+            <div class="putMethods">
+
+                <p id="putRow">
+                    <span>PUT</span>
+                    <span class="dropdownIcon">&#8801;</span>
+
+                </p>
+                <div class="methodDiv putDiv" id="putdiv1">
+                    <!--  -->
+                    <label for="putDataName" id="putValueLabel" class="requiredData">
+                        <!-- <span>*</span> -->
+                        Please Enter Required Data
+                    </label>
+                    <input type="text" id="putDataName" placeholder="Name or User Id">
+                    <!--  -->
+                    <label for="putBranchData" id="putBranchDataLabel" class="requiredData">
+                        <span>*</span>
+                        Please Enter Deactivated
+                    </label>
+                    <input type="text" id="putBranchData" placeholder="Deactivated">
+                    <!--  -->
+                    <label for="putCompanyId" id="companyIdLabelPut" class="requiredData">
+                        <span>*</span>
+                        Please Enter Company ID
+                    </label>
+                    <input type="text" id="putCompanyId" placeholder="Company Id">
+                    <!--  -->
+                    <label for="putBranchId" id="branchIdLabelPut" class="requiredData">
+                        <span>*</span>
+                        Please Enter Branch ID
+                    </label>
+                    <input type="text" id="putBranchId" placeholder="Branch Id">
+                    <!--  -->
+                    <label for="agentIdLabelPut" id="agentIdLabelPut" class="requiredData">
+                        <span>*</span>
+                        Please Enter Agent ID
+                    </label>
+                    <input type="text" id="putAgentId" placeholder="Agent Id">
+
+                    <div class="checkboxDiv">
+                        <!-- show all -->
+                        <label for="allCompanies">Change Company </label>
+                        <input type="checkbox" name="changeComp" id="changeComp" style="margin: 0;">
+
+                        <label for="allBranches">Change Brach </label>
+                        <input type="checkbox" name="changeBranch" id="changeBranch">
+
+                        <label for="allAgents">Change Agent </label>
+                        <input type="checkbox" name="changeAgent" id="changeAgent">
+                    </div>
+
+
+                    <!-- button -->
+                    <input type="button" id="putBtn" value="Put" class="putBtn">
+                </div>
+            </div>
+
+
+            <!-- show data -->
+        </div>
+
+
+        <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+        <div class="method-container">
+            <!--lender get method -->
+            <p class="">LENDER METHODS</p>
+            <div class="getMethods">
+                <p id="getLenderRow">
+                    <span>GET</span>
+                    <span class="dropdownIcon">&#8801;</span>
+                </p>
+                
+                <div class="methodDiv getDiv2" id="getdiv1">
+                    <!-- lender id input -->
+                    <label for="lenderIdGet" id="lenderIdGetLabel" class="requiredData">
+                        <span>*</span>
+                        Please Enter Lender ID
+                    </label>
+                    <input type="text" id="lenderIdGet" name="lenderId" placeholder="Lender Id">
+                     <!-- lender id input -->
+                     <!-- <label for="opTypesIdGet" id="lenderIdGetLabel" class="requiredData">
+                        <span>*</span>
+                        Please Enter Operation-types Id
+                    </label> -->
+                    <input type="text" id="opTypesIdGet" name="opTypesId" placeholder="Operation-types Id">
+                    <input type="text" id="opIdGet" name="opId" placeholder="Operation Id">
+                    <input type="text" id="conditionsIdGet" name="conditionsId" placeholder="Conditions Id">
+
+                   
+                        <!-- show all -->
+                        <div class="checkboxDiv">
+                            <label for="allLenders">Show all Lenders</label>
+                            <input type="checkbox" name="allLenders" id="allLenders">
+
+                            <label for="allOpTypes">Show all Operation-types</label>
+                            <input type="checkbox" name="allOpTypes" id="allOpTypes">
+
+                            <label for="allOp">Show all Operations</label>
+                            <input type="checkbox" name="allOp" id="allOp">
+
+                            <label for="allConditions">Show all Conditions</label>
+                            <input type="checkbox" name="allConditions" id="allConditions">
+                        </div>
+                        <!-- button -->
+                        <input type="button" id="getLenderBtn" value="Get" class="getBtn">
+                    </div>
+                </div>
+
+
+                <!-- company post method -->
+                <div class="postMethods">
+
+                    <p id="postLenderRow">
+                        <span>POST</span>
+                        <span class="dropdownIcon">&#8801;</span>
+
+                    </p>
+                    <div class="methodDiv postDiv2" id="postdiv1">
+                        <!--  -->
+                        <!-- <label for="dataName" id="ValueLabel" class="requiredData">
+                            <span>*</span>
+                            Please Enter New Name
+                        </label> -->
+                        <input type="text" id="lenderNameValue" name="lenderNameValue" placeholder="Data name">
+                        <!--  -->
+                        <label style="display: flex;" for="postCompanyId" class="requiredData" id="companyIdLabelP">
+                            Enter required condition informations: <span>FIFD, comission, interest, max amount, max term, min amount, min term,
+                                other conditions</span>
+                        </label>
+                        <input type="text" id="postConditiondatas" name="postConditiondatas" placeholder="for ex. info1, info2, info3 etc.">
+                        <!--   -->
+                        <label for="postCompanyId" class="requiredData" id="companyIdLabelP">
+                            <span>*</span>
+                            Please Enter Company ID
+                        </label>
+                        <input type="text" id="postCompanyId" name="compId" placeholder="Company Id">
+                        <!--  -->
+                        <label for="postBranchId" id="branchIdLabelP" class="requiredData">
+                            <span>*</span>
+                            Please Enter Branch ID
+                        </label>
+                        <input type="text" id="postBranchId" placeholder="Branch Id">
+
+                        <div class="checkboxDiv">
+                            <!-- show all -->
+                            <label for="allCompanies">Add New Lender </label>
+                            <input type="checkbox" name="lenderName" id="lenderName" style="margin: 0;">
+
+                            <label for="allBranches">Add New Operation-type </label>
+                            <input type="checkbox" name="opTypesPost" id="opTypesPost">
+
+                            <label for="allAgents">Add New Condition </label>
+                            <input type="checkbox" name="conditionPost" id="conditionPost">
+                        </div>
+
+
+                        <!-- button -->
+                        <input type="button" id="postLenderBtn" value="Post" class="postBtn">
+                    </div>
+                </div>
+
+                <!-- company put method -->
+                <div class="putMethods">
+
+                    <p id="putLenderRow">
+                        <span>PUT</span>
+                        <span class="dropdownIcon">&#8801;</span>
+
+                    </p>
+                    <div class="methodDiv putDiv2" id="putdiv1">
+                        <!--  -->
+                        <label for="putDataName" id="putValueLabel" class="requiredData">
+                            <span>*</span>
+                            Please Enter New Name
+                        </label>
+                        <input type="text" id="putDataName" placeholder="Name or User Id">
+                        <!--  -->
+                        <label for="putBranchData" id="putBranchDataLabel" class="requiredData">
+                            <span>*</span>
+                            Please Enter Deactivated
+                        </label>
+                        <input type="text" id="putBranchData" placeholder="Deactivated">
+                        <!--  -->
+                        <label for="putCompanyId" id="companyIdLabelPut" class="requiredData">
+                            <span>*</span>
+                            Please Enter Company ID
+                        </label>
+                        <input type="text" id="putCompanyId" placeholder="Company Id">
+                        <!--  -->
+                        <label for="putBranchId" id="branchIdLabelPut" class="requiredData">
+                            <span>*</span>
+                            Please Enter Branch ID
+                        </label>
+                        <input type="text" id="putBranchId" placeholder="Branch Id">
+                        <!--  -->
+                        <label for="agentIdLabelPut" id="agentIdLabelPut" class="requiredData">
+                            <span>*</span>
+                            Please Enter Agent ID
+                        </label>
+                        <input type="text" id="putAgentId" placeholder="Agent Id">
+
+                        <div class="checkboxDiv">
+                            <!-- show all -->
+                            <label for="allCompanies">Change Company </label>
+                            <input type="checkbox" name="changeComp" id="changeComp" style="margin: 0;">
+
+                            <label for="allBranches">Change Brach </label>
+                            <input type="checkbox" name="changeBranch" id="changeBranch">
+
+                            <label for="allAgents">Change Agent </label>
+                            <input type="checkbox" name="changeAgent" id="changeAgent">
+                        </div>
+
+
+                        <!-- button -->
+                        <input type="button" id="putBtn" value="Put" class="putBtn">
+                    </div>
+                </div>
+
+
+                <!-- show data -->
+            </div>
+            <div class="terminalDiv">
+                <div>
+                    <input type="button" value="Copy" class="copyBtn" id="copyBtn">
+                    <input type="button" value="Delete" class="deleteBtn" id="deleteBtn">
+                </div>
+
+                <p id="test"></p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="axios.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

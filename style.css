@@ -1,0 +1,36 @@
+:root {
+    font-size: 0.625em;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    flex: none;
+    text-decoration: none;
+    font-family:  "Roboto", "Helvetica", "Arial", sans-serif;;
+    flex: none;
+}
+
+html, body, div, nav, header, footer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+.container{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;   
+    padding: 1em;
+}
+.your-class::-webkit-input-placeholder {
+    color: rgba(218, 38, 38, 0.699);
+ }
+ 
+ ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(195, 195, 195);
+  }

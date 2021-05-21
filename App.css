@@ -1,0 +1,127 @@
+.method-container{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 1px solid rgb(195, 195, 195);
+    padding:2em 0;
+}
+.method-container p{
+  font-size: 1em;
+    padding:2em 2em;
+}
+
+.getMethods, .postMethods, .putMethods{ display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.getMethods > p, .postMethods >p, .putMethods >p { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1em;
+    padding: 1.5em;
+    background-color: rgb(0, 132, 255);
+
+}
+.postMethods >p{
+    background-color: rgb(24, 173, 128);
+
+}
+.putMethods >p{
+    background-color: rgb(252, 134, 0);
+}
+.methodDiv{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    border:  1px solid rgb(195, 195, 195);
+
+}
+.methodDiv *{
+    padding: 1em;
+    margin-bottom: 1em;
+    border:1px solid rgb(195, 195, 195);
+    width: 100%;
+    border-radius: 10px;
+}
+.methodDiv > input[type="text"]:hover{
+    border-bottom:2px solid rgba(32, 32, 32, 0.39);
+}
+
+.methodDiv .getBtn{
+    cursor: pointer;
+}
+#getRow, #postRow{
+    border: 1px solid rgb(195, 195, 195);
+}
+.dropdownIcon{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.requiredData{
+    border:none;
+    display: none;
+}
+.requiredData span{
+    color: red;
+    border:none;
+}
+
+.checkboxDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.checkboxDiv *{
+    width: 50%;
+}
+/*  terminal div------------------------------------------------------ */
+
+.terminalDiv{
+    width: 45%; 
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: cadetblue;
+    border: 1px solid  rgb(195, 195, 195);
+    margin-left: 50%;
+    padding: 1em;
+}
+.terminalDiv *{
+    padding: 1em;
+    margin-bottom: 1em;
+    border:1px solid rgb(195, 195, 195);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.terminalDiv div{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.terminalDiv p{
+    background-color: white;
+    height: 100%;
+    max-height: 31em;
+    overflow-y: scroll;
+}
+.terminalDiv input{
+    width: 40%;
+    cursor: pointer;
+}
+
+
